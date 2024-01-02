@@ -79,50 +79,54 @@
                  </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Change Password? 🔒</h4>
-              <p class="mb-4">Enter your email and we'll send you instructions to reset your password</p>
-              <form id="formAuthentication" class="mb-3" action="dashboard.html" method="POST">
+              <h4 class="mb-2">System Update 🔒</h4>
+              <hr>
+                          <form id="formAuthentication" class="mb-3" action="reset.html">
                 <div class="mb-3">
-                  <label for="email" class="form-label" aria-required="">Email</label>
+                  <label for="email" class="form-label" aria-required="">Add Vendor/ Supplier</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
+                    id="text"
+                    name="text"
+                    placeholder="Add Vendor/ Supplier"
                     autofocus
-                    required
+                    
                   />
                 </div>
                 <div class="mb-3">
-                    <label for="passwordclass="form-label aria-required="">Old Passcode</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      name="password"
-                      placeholder="Enter Old Passcode"
-                      autofocus
-                      required
-                    />
-                  </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label" aria-required="">Current Passcode</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      name="password"
-                      placeholder="Enter Current Passcode"
-                      autofocus
-                    />
-                  </div>
-                <button class="btn btn-primary d-grid w-100"><a href="dashboard.html" style="text-decoration: none;"><font color="white">Submit</font></a></button>
+                  <label for="email" class="form-label" aria-required="">Add Unit of Measure ( UOM )</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="text"
+                    name="text"
+                    placeholder="Add UOM ..."
+                    autofocus
+                    
+                  />
+                </div>
+                <p><div class="mb-3">
+                  <label for="email" class="form-label" aria-required="">Add Payment Mode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="text"
+                    name="text"
+                    placeholder="Add Payment Mode..."
+                    autofocus
+                    
+                  />
+                </p>
+                
+                
+               
+                <button class="btn btn-primary d-grid w-100"><font color="white">Submit</font></button>
               </form>
               <div class="text-center">
-                <a href="dashboard.html" class="d-flex align-items-center justify-content-center">
+                <a href="adminonly.html" class="d-flex align-items-center justify-content-center">
                 
-                 <b>Cancel</b> 
+                 <b>Logout</b> 
                 </a>
               </div>
             </div>
@@ -135,13 +139,52 @@
     <!-- / Content -->
 
     <div class="buy-now">
-        <a
-        href="https://wa.me/255752746268"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Support</a
-      >
+      <a
+        
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      
+      class="btn btn-dark btn-buy-now"
+      ><font color="white">User List</font></a
+    >
+
     </div>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">LIST OF SYSTEM USERS</h1>
+      <hr>
+		  
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		
+		<div class="modal-body">
+			
+		  <ul class="molist">
+			
+			  <li><b><font size=2 color="black">[ Simon Mavumbo, Title: Data Officer, Username : smavumbo@lubigainvestment.com, passcode: 88876587 ]</font></b></li>
+        
+			  <li><b><font size=2 color="black">[ Fridolin Anthony, Title: IT Officer, Username : fanthony@lubigainvestment.com, passcode: 12345678 ]</font></b></li>
+        
+			  <li><b><font size=2 color="black">[ Johnson Abel, Title: Accountant, Username : jabel@lubigainvestment.com, passcode: 87654321 ]</font></b></li>
+        
+			  <li><b><font size=2 color="black">[ Getrude Malick, Title: HR Manager, Username : gmalick@lubigainvestment.com, passcode: 713627485 ]</font></b></li>
+        
+			  <li><b><font size=2 color="black">[ Daniel Isihaka, Title: CEO, Username : disihaka@lubigainvestment.com, passcode: 683168429 ]</font></b></li>
+        
+			  <hr>
+        <button class="btn btn-success fw-bolder fs-8"><font size=2><a href="userforgot.html"><font color="black"><b>RESET</b></font></a></font></button>
+		  </ul>
+		  
+		
+		  <p><b> <font color="black" size=2>Please, Click Update to Modify User Credentials Above</font></b></p>
+		</div>
+	  </div>
+	</div>
+  </div>
+ 
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

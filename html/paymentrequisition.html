@@ -84,6 +84,30 @@
               <p class="mb-4">Make a Payment Requisition Now !!</p>
 
               <form id="formAuthentication" class="mb-3" action="dashboard.html" method="POST">
+                <div class="mt-2 mb-3">
+                  <label for="largeSelect" class="form-label">Vendor / Supplier</label>
+                  <select id="largeSelect" class="form-select form-select-lg" required>
+                    <option>Click to Select</option>
+                    <option value="kilogram">Clask Secured</option>
+                    <option value="litre">Multi-Lion Security</option>
+                    
+                    <option value="gram">Puma Energy Tanzania</option>
+                    
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Vendor Phone</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="prno"
+                    name="prno"
+                    placeholder="Input Phone Number..."
+                    autofocus
+                    required
+                  />
+                </div>
+                
                 <div class="mb-3 row">
                     <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Date</label>
                     <div class="col-md-10">
@@ -96,12 +120,14 @@
                       />
                     </div>
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlSelect1" class="form-label">Payment Method</label>
-                    <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" required>
-                      <option selected>Click to Select...</option>
-                      <option value="1">Cash</option>
-                      <option value="2">Credit</option>
+                  <div class="mt-2 mb-3">
+                    <label for="largeSelect" class="form-label">Payment Mode</label>
+                    <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option>Click to Select</option>
+                      <option value="minimum">Cash</option>
+                      <option value="moderate">Credit</option>
+                      <option value="maximum">Cheque</option>
+                      <option value="maximum">Transfer</option>
                       
                     </select>
                   </div>
@@ -204,7 +230,7 @@
                     </label>
                   </div>
                 </div>
-                <button class="btn btn-primary d-grid w-100"><a href="dashboard.html" style="text-decoration: none;"><font color="white">Request Now</font></a></button>
+                <button class="btn btn-primary d-grid w-100"><font color="white">Submit</font></a></button>
               </form>
 
               <p class="text-center">
