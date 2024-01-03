@@ -69,39 +69,106 @@
 
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner py-4">
-          <!-- Forgot Password -->
+        <div class="authentication-inner">
+          <!-- Register Card -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-               
-                 
-                
+                <a href="dashboard.html" class="app-brand-link gap-2">
+                  
+                 </a>
               </div>
               <!-- /Logo -->
-              <center><h4 class="mb-2">User Privilege!!</h4></center>
-              <hr>
-              <p class="mb-4">Welcome to LUBUGA Information Management Subsystem
-                </p>
-                <p>Login as ;</p>
-                <div class="gender">
-          
-          
-                    <font color="blue"><i class="fas fa-user"></i></font> <a href="purchase.html" style="text-decoration: none;"><font color="black" size=2>Agreement</font></a>
-                            <font color="blue"><i class="fas fa-user"></i></font>
-                    
-                     <a href="registration.html" style="text-decoration: none;"><font color="black" size=2>Register</font></a></label>
-               
+              <h4 class="mb-2">Cash Disbursement</h4>
+              <p><hr></p>
+              <p class="mb-4">Submit a Cash Disbursement Now !!</p>
+              
+              <form id="formAuthentication" class="mb-3" action="dashboard.html">
+                <div class="mb-3 row">
+                    <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Date</label>
+                    <div class="col-md-10">
+                      <input
+                        class="form-control"
+                        type="datetime-local"
+                        
+                        id="html5-datetime-local-input"
+                        required
+                      />
+                    </div>
+                  </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">CD No.</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="department"
+                    name="department"
+                    placeholder="Input CD No..."
+                    autofocus
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">S/No. Column</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="purpose"
+                      name="purpose"
+                      placeholder="Input S/No..."
+                      autofocus
+                      required
+                    />
+                  </div>
+                 
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Description (Disbursed To)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="prno"
+                      name="prno"
+                      placeholder="Input Description (Disbursed To)..."
+                      autofocus
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Amount</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="prno"
+                      name="prno"
+                      placeholder="Input Amount..."
+                      autofocus
+                      required
+                    />
                   </div>
                 
-                 
-                  
-              <hr>
-            </p>
+
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" required />
+                    <label class="form-check-label" for="terms-conditions">
+                      Confirm
+                    
+                    </label>
+                  </div>
+                </div>
+                <button class="btn btn-primary d-grid w-100">Submit</button>
+              </form>
+
+              <p class="text-center">
+                <span>Please, Input a clear Cash Disbursement Information </span>
+                <a href="logincashdisbursement.html">
+                  <span><b>Logout</b></span>
+                </a>
+              </p>
             </div>
           </div>
-          <!-- /Forgot Password -->
+          <!-- Register Card -->
         </div>
       </div>
     </div>
@@ -109,7 +176,7 @@
     <!-- / Content -->
 
     <div class="buy-now">
-        <a
+      <a
         href="https://wa.me/255752746268"
         target="_blank"
         class="btn btn-danger btn-buy-now"

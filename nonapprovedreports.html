@@ -69,39 +69,63 @@
 
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner py-4">
-          <!-- Forgot Password -->
+        <div class="authentication-inner">
+          <!-- Register Card -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-               
-                 
-                
+                <a href="dashboard.html" class="app-brand-link gap-2">
+                  
+                     </a>
               </div>
               <!-- /Logo -->
-              <center><h4 class="mb-2">User Privilege!!</h4></center>
-              <hr>
-              <p class="mb-4">Welcome to LUBUGA Information Management Subsystem
-                </p>
-                <p>Login as ;</p>
-                <div class="gender">
-          
-          
-                    <font color="blue"><i class="fas fa-user"></i></font> <a href="purchase.html" style="text-decoration: none;"><font color="black" size=2>Agreement</font></a>
-                            <font color="blue"><i class="fas fa-user"></i></font>
+              <h4 class="mb-2">Pending Reports</h4>
+              <p><hr></p>
+              <p class="mb-4">Search Pending Reports Here!!</p>
+              <div class="mb-3 row">
+                <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Start Date</label>
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="datetime-local"
                     
-                     <a href="registration.html" style="text-decoration: none;"><font color="black" size=2>Register</font></a></label>
+                    id="html5-datetime-local-input"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <p><div class="mb-3 row">
+                <label for="html5-datetime-local-input" class="col-md-2 col-form-label">End Date</label>
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="datetime-local"
+                    
+                    id="html5-datetime-local-input"
+                    required
+                  />
+                </div>
+              </div></p>
                
-                  </div>
+                    
+              <center> <a
+        
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 
-                 
-                  
-              <hr>
-            </p>
+                class="btn btn-primary btn-buy-now"
+                ><font color="white">Search</font></a
+              >
+            </center>
+                <a href="loginnonapprovedreport.html">
+                  <p><span><center><b>Logout</b></center></span></p>
+                </a>
+              </p>
             </div>
           </div>
-          <!-- /Forgot Password -->
+          <!-- Register Card -->
         </div>
       </div>
     </div>
@@ -109,13 +133,43 @@
     <!-- / Content -->
 
     <div class="buy-now">
-        <a
+      <a
         href="https://wa.me/255752746268"
         target="_blank"
         class="btn btn-danger btn-buy-now"
         >Support</a
       >
     </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">PENDING REPORTS</h1>
+      <hr>
+		  
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		
+		<div class="modal-body">
+			
+		  <ul class="molist">
+			
+			  <li><b><a href=""><font size=2 color="black">Pending Report [ date Range: From 1 January - 31 December 2021]</font></a></b></li>
+        <li><b><a href=""><font size=2 color="black">Pending Report [ date Range: From 1 January - 31 December 2022]</font></a></b></li>
+        <li><b><a href=""><font size=2 color="black">Pending Report [ date Range: From 1 January - 31 December 2023]</font></a></b></li>
+        
+			  <hr>
+       
+      </ul>
+		  
+		
+		 
+    </div>
+	  </div>
+	</div>
+  </div>
+ 
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -138,3 +192,5 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
+
+  

@@ -69,39 +69,85 @@
 
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner py-4">
-          <!-- Forgot Password -->
+        <div class="authentication-inner">
+          <!-- Register Card -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-               
+                <a href="dashboard.html" class="app-brand-link gap-2">
                  
-                
+                      
+                </a>
               </div>
               <!-- /Logo -->
-              <center><h4 class="mb-2">User Privilege!!</h4></center>
-              <hr>
-              <p class="mb-4">Welcome to LUBUGA Information Management Subsystem
-                </p>
-                <p>Login as ;</p>
-                <div class="gender">
-          
-          
-                    <font color="blue"><i class="fas fa-user"></i></font> <a href="purchase.html" style="text-decoration: none;"><font color="black" size=2>Agreement</font></a>
-                            <font color="blue"><i class="fas fa-user"></i></font>
-                    
-                     <a href="registration.html" style="text-decoration: none;"><font color="black" size=2>Register</font></a></label>
-               
+              <h4 class="mb-2">Retirement Details</h4>
+              <p><hr></p>
+              <p class="mb-4">Submit Retirement Information Now !!</p>
+
+              <form id="formAuthentication" class="mb-3" action="dashboard.html">
+                <div class="mb-3 row">
+                    <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Date</label>
+                    <div class="col-md-10">
+                      <input
+                        class="form-control"
+                        type="datetime-local"
+                        
+                        id="html5-datetime-local-input"
+                        required
+                      />
+                    </div>
                   </div>
-                
+                <div class="mb-3">
+                  <label for="username" class="form-label">Retirement No.</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="department"
+                    name="department"
+                    placeholder="Input Retirement No..."
+                    autofocus
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Populate Specific Order</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="purpose"
+                      name="purpose"
+                      placeholder="Input Populate Specific Order..."
+                      autofocus
+                      required
+                    />
+                  </div>
+                  <div class="card">
+                    
+                    <div class="card-body">
+                      
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Scanned PDF File</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required />
+                      </div>
                  
-                  
-              <hr>
-            </p>
+                 
+                  </div>
+
+               
+        
+                <button class="btn btn-primary d-grid w-100"><font color="white">Submit</font></button>
+              </form>
+
+              <p class="text-center">
+                <span>Please, Input a clear Retirement Information</span>
+                <p><center><a href="loginretirement.html">
+                  <span><b>Logout</b></span>
+                </center></a>
+              </p>
             </div>
           </div>
-          <!-- /Forgot Password -->
+          <!-- Register Card -->
         </div>
       </div>
     </div>
@@ -109,12 +155,12 @@
     <!-- / Content -->
 
     <div class="buy-now">
-        <a
-        href="https://wa.me/255752746268"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Support</a
-      >
+      <a
+      href="https://wa.me/255752746268"
+      target="_blank"
+      class="btn btn-danger btn-buy-now"
+      >Support</a
+    >
     </div>
 
     <!-- Core JS -->
