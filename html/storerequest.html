@@ -78,11 +78,11 @@
                
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Purchase Requisition</h4>
+              <h4 class="mb-2">Store Requisition</h4>
               <hr>
               <p class="mb-4">Make a Purchases Request Now !!</p>
 
-              <form id="formAuthentication" class="mb-3" action="loginprocurement.html">
+              <form id="formAuthentication" class="mb-3" action="loginlogistic.html">
                 <div class="mt-2 mb-3">
                   <label for="largeSelect" class="form-label">Vendor / Supplier</label>
                   <select id="largeSelect" class="form-select form-select-lg" required>
@@ -290,7 +290,18 @@
                      
                     </select>
                   </div>
-                  
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Remark / Comment</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="text"
+                      name="text"
+                      placeholder="Input Remark..."
+                      autofocus
+                      required
+                    />
+                  </div>
                 <div class="mb-3">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" required />
@@ -320,48 +331,15 @@
     <!-- / Content -->
 
     <div class="buy-now">
-      <a
-        
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        
-        class="btn btn-dark btn-buy-now"
-        ><font color="white">Click to View Store List</font></a
-      >
+        <a
+          href="https://wa.me/255752746268"
+          target="_blank"
+          class="btn btn-danger btn-buy-now"
+          >Support</a
+        >
+      </div>
 
-    </div>
- <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">AVAILABLE STORE LIST</h1>
-      <hr>
-		  
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		
-		<div class="modal-body">
-			
-		  <ul class="molist">
-			
-			  <li><b><font size=2 color="black">Stock [ 60,000,000 Litres, Oils]</font></b></li>
-        <li><b><font size=2 color="black">Stock [ 9000,000 Kilogrames, Iron Materials]</font></b></li>
-        <li><b><font size=2 color="black">Stock [ 420,000,000 Millilitres, Chemicals ]</font></b></li>
-        <li><b><font size=2 color="black">Stock [ 350,000 Grames, Stones]</font></b></li>
-        <li><b><font size=2 color="black">Stock [ 710,000,000 Kilometres, Road length Materials]</font></b></li>
-       
-			  <hr>
-        <button class="btn btn-success fw-bolder fs-8"><font size=2><a href="storerequest.html"><font color="black"><b>REQUEST</b></font></a></font></button>
-		  </ul>
-		  
-		
-		  <p><b> <font color="black" size=2>Please, Click REQUEST to Request for Available Store List Above</font></b></p>
-		</div>
-	  </div>
-	</div>
-  </div>
- 
+	
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

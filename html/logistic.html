@@ -92,8 +92,8 @@
               <div data-i18n="Analytics">Dashboard</div>
             </a>
           </li>
- <!-- Layouts -->
- <li class="menu-item">
+  <!-- Layouts -->
+  <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
       <div data-i18n="Authentications">Purchase</div>
@@ -107,16 +107,17 @@
         </li>
         <li class="menu-item">
           <li class="menu-item">
+            <a href="loginlogistic.html" class="menu-link" target="_blank">
+              <div data-i18n="Basic">Stock Movement</div>
+            </a>
+          </li>
+        <li class="menu-item">
+          <li class="menu-item">
             <a href="loginprocurement.html" class="menu-link" target="_blank">
               <div data-i18n="Basic">Order Confirmation</div>
             </a>
           </li>
-          <li class="menu-item">
-            <li class="menu-item">
-              <a href="loginlogistic.html" class="menu-link" target="_blank">
-                <div data-i18n="Basic">Stock Movement</div>
-              </a>
-            </li>
+         
       
       
     </ul>
@@ -205,7 +206,7 @@
         </a>
       </li>
       <li class="menu-item">
-        <a href="logincashcollection.html" class="menu-link">
+        <a href="logininvoice.html" class="menu-link">
           <div data-i18n="Error">Invoice Confirmation</div>
         </a>
       </li>
@@ -278,6 +279,7 @@
 </ul>
 </aside>
 <!-- / Menu -->
+
       <!-- Layout container -->
       <div class="layout-page">
         <!-- Navbar -->
@@ -716,7 +718,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">STOCK ORDERS QUEUE</h1>
+            <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">STOCK REQUEST QUEUE</h1>
         <hr>
             
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -726,16 +728,19 @@
               
             <ul class="molist">
               
-                <li><b><font size=2 color="black">Order [ Vendor: Puma Energy, Phone: +255 683 168 429, Project No. 245, Project Name: Transportation, Date: 23/12/2023, Duration: 6 Months]</font></b></li>
-          <li><b><font size=2 color="black">Order [ Vendor: Multi-Lion Security, Phone: +255 764 543 811, Project No. 498, Project Name: Road Liming, Date: 15/10/2022, Duration: 1 Year]</font></b></li>
-          <li><b><font size=2 color="black">Order [ Vendor: Clask Secured, Phone: +255 713 826 484, Project No. 125, Project Name: Boots Distribution, Date: 12/02/2021, Duration: 6 Years]</font></b></li>
+                <li><b><font size=2 color="black">Request [ Vendor: Puma Energy, Phone: +255 683 168 429, Project No. 245, Project Name: Transportation, Date: 23/12/2023, Duration: 6 Months]</font></b></li>
+          <li><b><font size=2 color="black">Request [ Vendor: Multi-Lion Security, Phone: +255 764 543 811, Project No. 498, Project Name: Road Liming, Date: 15/10/2022, Duration: 1 Year]</font></b></li>
+          <li><b><font size=2 color="black">Request [ Vendor: Clask Secured, Phone: +255 713 826 484, Project No. 125, Project Name: Boots Distribution, Date: 12/02/2021, Duration: 6 Years]</font></b></li>
          
-                <hr>
           
+                <hr>
+                <button class="btn btn-success fw-bolder fs-8"><font size=2><a href="loginprocurement.html"><font color="black"><b>Confirm</b></font></a></font></button> | <button class="btn btn-danger fw-bolder fs-8"><font size=2><a href="request.html"><font color="black"><b>Reject</b></font></a></font></button>
+              </ul>
+
             </ul>
             
           
-            <p><b> <font color="black" size=2>Please, Confirm the Correct Stock Movement Information status Above</font></b></p>
+            <p><b> <font color="black" size=2>Please, Confirm the required Purchase Request to Procurement Officer or Reject showing Available in store</font></b></p>
           </div>
         </div>
       </div>
