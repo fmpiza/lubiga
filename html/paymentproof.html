@@ -84,7 +84,7 @@
               <hr>
               <p class="mb-4">Please Attach your Proof of Payment Here !!</p>
 
-              <form id="formAuthentication" class="mb-3" action="dashboard.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="paymentproof.html">
                 <div class="mt-2 mb-3">
                   <label for="largeSelect" class="form-label">Vendor / Supplier</label>
                   <select id="largeSelect" class="form-select form-select-lg" required>
@@ -182,8 +182,8 @@
 
               <p class="text-center">
                 <span>Please, Submit a clear Proof of Payment Information</span>
-                <a href="dashboard.html">
-                  <span><b>Cancel</b></span>
+                <a href="loginprocurementt.html">
+                  <span><b>Logout</b></span>
                 </a>
               </p>
             </div>
@@ -197,12 +197,50 @@
 
     <div class="buy-now">
       <a
-        href="https://wa.me/255752746268"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Support</a
+        
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        
+        class="btn btn-dark btn-buy-now"
+        ><font color="white">Click to View Payment Requests</font></a
       >
+
+      
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-6 fw-bold fs-5" id="exampleModalLabel">PAYMENT REQUESTS QUEUE</h1>
+      <hr>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+            
+          <ul class="molist">
+            
+              <li><b><font size=2 color="black">Payment Request [ Vendor: Puma Energy, Phone: +255 683 168 429, Project No. 245, Project Name: Transportation, Date: 23/12/2023, Duration: 6 Months]</font></b></li>
+        <li><b><font size=2 color="black">Payment Request [ Vendor: Multi-Lion Security, Phone: +255 764 543 811, Project No. 498, Project Name: Road Liming, Date: 15/10/2022, Duration: 1 Year]</font></b></li>
+        <li><b><font size=2 color="black">Payment Request [ Vendor: Clask Secured, Phone: +255 713 826 484, Project No. 125, Project Name: Boots Distribution, Date: 12/02/2021, Duration: 6 Years]</font></b></li>
+       
+        
+              <hr>
+              <button class="btn btn-success fw-bolder fs-8"><font size=2><a href="procurementt.html"><font color="black"><b>Confirm</b></font></a></font></button> 
+             
+            </ul>
+
+          </ul>
+          
+        
+          <p><b> <font color="black" size=2>Please, Confirm the required Purchase Request to Procurement Officer or Reject showing Available in store</font></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
